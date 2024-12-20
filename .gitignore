@@ -1,0 +1,39 @@
+# Virtual environment folder
+venv/
+.env/
+
+# Byte-compiled Python files
+*.pyc
+*.pyo
+__pycache__/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE/project-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Python environment files
+*.env
+*.venv
+Pipfile
+Pipfile.lock
+
+# CSV or data files (optional, if sensitive or large)
+*.csv
+
+# Node modules (if any frontend dependencies)
+node_modules/
+
+# Ignore compiled code or build artifacts
+dist/
+build/
