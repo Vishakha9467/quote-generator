@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="manifest" href="/manifest.json">
+    <link href="static/css/style.css" rel="stylesheet">
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js').then(() => {
+                console.log('Service Worker Registered');
+            });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Quote Generator</h1>
+        <p>Find inspiration tailored to your mood</p>
+    </header>
+    <main>
+        <form id="quote-form">
+            <input type="text" id="category" name="category" placeholder="Enter a category (e.g., life, love)">
+            <button type="submit">Get Quote</button>
+        </form>
+        <div id="quote-box" style="display: none;">
+            <blockquote id="quote"></blockquote>
+            <p id="author"></p>
+        </div>
+    </main>
+    <footer>&copy; 2024 Quote Generator</footer>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
